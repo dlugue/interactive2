@@ -47,6 +47,29 @@ body {
 	margin-bottom: 24px;
 }
 
+.tooltip {
+    display: inherit;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: flex;
+    background-color: #e3e7ed;
+    color: black;
+    opacity: .5;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
 /* example buttons */
 
 
@@ -62,6 +85,7 @@ body {
         -ms-transform: rotate(20deg);
          -o-transform: rotate(20deg);
 }
+
 #button-1:hover::before {
     content: "";
     position: absolute;
@@ -265,7 +289,6 @@ body {
 }
 
 #button-13:hover {
-    background: #af77b7;
     		transform: translateX(-25px);
 }
 
@@ -355,7 +378,7 @@ body {
 }
 
 #button-17:hover {
-    background: #fcd114;
+    background: #ff7d0c;
     -webkit-animation: elastic 2s linear 0s 3 normal ;
  animation: elastic 2s linear 0s 3 normal ;
 }
@@ -417,7 +440,7 @@ body {
 }
 
 #button-20:hover {
-    background: #751e09;
+    background: #700202;
      -webkit-animation: shake 3s linear 1s infinite normal ;
  animation: shake 3s linear 1s infinite normal ;
 }
@@ -583,7 +606,7 @@ body {
 }
 
 #button-26:hover {
-    background: #fcd114;
+    background: #f6ffa5;
     -webkit-animation: bounce-in 1s ease 2s 1 normal ;
  animation: bounce-in 1s ease 2s 1 normal ;
 }
@@ -775,58 +798,112 @@ body {
    background: white;
 }
 
-#button-31:hover + #button-32 {
+#button-31:hover {
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+}
+
+#button-32:hover {
+   position: relative;
+  width: 150px;
+  height: 150px;
+  border: none;
+  box-shadow: 0 0 0 0 rgba(232, 76, 61, 0.7);
+  border-radius: 50%;
+  background-color: #e84c3d;
+  -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+@-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+
+
+#button-33:hover {
+   animation: colorchange 5s;
+      -webkit-animation: colorchange 5s;
+    }
+
+    @keyframes colorchange
+    {
+      0%   {background: red;}
+      25%  {background: yellow;}
+      50%  {background: blue;}
+      75%  {background: green;}
+      100% {background: red;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: red;}
+      25%  {background: yellow;}
+      50%  {background: blue;}
+      75%  {background: green;}
+      100% {background: red;}
+    }
+
+#button-34:hover {
+ border: 3px dotted #3a7999;
+	color: #3a7999;
+	background: rgba(0,0,0,0);
+	position: inherit;
+}
+
+#button-35:hover {
+   @-webkit-keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+
+#button-36:hover {
    background: white;
 }
 
-#button-32:hover + #button-33 {
+#button-37:hover {
    background: white;
 }
 
-#button-33:hover + #button-34 {
+#button-38:hover {
    background: white;
 }
 
-#button-34:hover + #button-35 {
+#button-39:hover {
    background: white;
 }
 
-#button-35:hover + #button-36 {
+#button-40:hover {
    background: white;
 }
 
-#button-36:hover + #button-37 {
+#button-41:hover {
    background: white;
 }
 
-#button-37:hover + #button-38 {
+#button-42:hover {
    background: white;
 }
 
-#button-38:hover + #button-39 {
+#button-43:hover {
    background: white;
 }
 
-#button-40:hover + #button-41 {
+#button-44:hover {
    background: white;
 }
 
-#button-42:hover + #button-43 {
+#button-45:hover {
    background: white;
 }
-
-#button-44:hover + #button-45 {
-   background: white;
-}
-
-#button-45:hover + #button-46 {
-   background: white;
-}
-
-#button-47:hover + #button-49 {
-   background: white;
-}
-
 
 #button-46:hover {
 	background-color: red;
@@ -834,7 +911,7 @@ body {
 }
 
 #button-47:hover {
-	cursor: none;
+   cursor: none;
 }
 
 #button-48 {
