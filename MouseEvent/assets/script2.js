@@ -22,6 +22,9 @@ var numRand = Math.floor(Math.random()*6);
 $('span').text(prompts[numRand]);
 });
 
+
+//Script below is for the tracing
+
  var myPath;
 
 function onMouseDown(event) {

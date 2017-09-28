@@ -1,0 +1,159 @@
+<html>
+<head >
+  <title>Draw Blind</title>
+
+<!-- Load the Paper.js library -->
+  <script type="text/javascript" src="js/paper.js"></script>
+  <!-- Load external PaperScript and associate it with myCanvas -->
+  <script type="text/paperscript" src="js/myScript.js" canvas="myCanvas">
+  </script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+<!-- Style starts here -->
+<style>
+
+img {
+  width: 650px;
+  height: 120px;
+
+}
+
+.title {
+  text-align: center;
+  margin-top: 1%;
+  position: absolute;
+  padding: 0;
+  top: 2%;
+  left: 10%;
+  right: 10%;
+  bottom: 90%;
+  z-index: 3;
+}
+
+.instruct{
+  color: #000;
+  font-size: 16px;
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+  position: absolute;
+    padding: 0;
+  top: 90%;
+  left: 10%;
+  right: 10%;
+  bottom: 8%;
+
+  z-index: 3;
+}
+
+canvas {
+  /*border: 1px solid;*/
+  padding: 0;
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: none;
+
+  z-index: 1;
+}
+
+.image-detail-canvas {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  max-width: 100% !important;
+  max-height: 100% !important;
+}
+
+#myCanvas {
+  width: 100vw; 
+  height: 100vh;
+}
+
+#rectangle{
+    width:100vw;
+    height:100vh;
+    background:white;
+    overflow:visible;
+    pointer-events:none;
+    
+
+  padding: 0;
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: none;
+
+  z-index: 2;
+}
+
+.bt {
+  background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    font-size: 16px;
+    font-family: 'Comfortaa', cursive;
+}
+
+  </style>
+</head>
+
+
+<!-- Body starts here -->
+<body>
+
+
+
+  <div class="title"><img id="changeMe" src="" />
+  </div>
+
+  <div id="myDIV"><div id="rectangle"></div></div>
+
+
+  <div class="image-detail"><canvas class="image-detail-canvas" id="myCanvas"></canvas>
+</div>
+
+
+<div class="instruct"><button class="bt" onclick="myFunction()">
+  How accurate can you draw blind? (draw then click me to find out)</button>
+</div>
+
+
+<!-- Script starts here -->
+<script type="text/javascript">
+
+function getRandomImage() {
+  var images = [
+    "images/prompt1.png", "images/prompt2.png", "images/prompt3.png", "images/prompt4.png",
+  ];
+  return images[Math.floor(Math.random() * images.length)];
+}
+
+$(document).ready(function() {
+  $("#changeMe").attr('src', getRandomImage());
+});
+
+
+//canvas starts here
+
+function myFunction() {
+    var x = document.getElementById('myDIV');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+         
+</script>
+
+
+</body>
+</html>
