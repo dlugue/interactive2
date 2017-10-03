@@ -5,7 +5,7 @@
 <!-- Load the Paper.js library -->
   <script type="text/javascript" src="js/paper.js"></script>
   <!-- Load external PaperScript and associate it with myCanvas -->
-  <script type="text/paperscript" src="js/myScript.js" canvas="myCanvas">
+  <script type="text/paperscript" src="js/myscript.js" canvas="myCanvas">
   </script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
@@ -171,20 +171,6 @@ var numRand = Math.floor(Math.random()* prompts.length);
 
 $('span').text(prompts[numRand]);
 });
-
-
-//Script below is for the tracing
-
- var myPath;
-
-function onMouseDown(event) {
-  myPath = new Path();
-  myPath.strokeColor = 'black';
-}
-
-function onMouseDrag(event) {
-  myPath.add(event.point);
-}
 
 
 //canvas starts here
