@@ -1,0 +1,186 @@
+body {
+	overflow: hidden;
+}
+
+.canvas {
+	width: 100vw;
+	height: 100vh;
+	background: white;
+	position: relative;
+}
+
+.line {
+    width: 16px;
+    height: 4.4px;
+    background: #211f1e;
+    position: absolute;
+}
+
+#Ab1 {
+    width: 11px;
+    height: 11px;
+    background: none;
+    border-style: solid;
+    border-color: #211f1e;
+    border-width: 4.4px;
+    top: 1px;
+    left: 48px;
+    position: absolute;
+}
+
+#A1 {
+    top: 33px;
+    left: 34px;
+}
+
+#A2 {
+    top: 33px;
+    left: 65px;
+}
+
+#A3 {
+    width: 16px;
+    height: 4.4px;
+    background: #211f1e;
+    top: 47px;
+    left: 19px;
+    position: absolute;
+}
+
+#Ab3 {
+    width: 11px;
+    height: 11px;
+    background: none;
+    border-style: solid;
+    border-color: #211f1e;
+    border-width: 4.4px;
+    top: 63px;
+    left: 17px;
+    position: absolute;
+}
+
+#A4 {
+    width: 16px;
+    height: 4.4px;
+    background: #211f1e;
+    top: 47px;
+    left: 80px;
+    position: absolute;
+}
+
+#Ab4 {
+    width: 11px;
+    height: 11px;
+    background: none;
+    border-style: solid;
+    border-color: #211f1e;
+    border-width: 4.4px;
+    top: 63px;
+    left: 78px;
+    position: absolute;
+}
+
+#A5 {
+    width: 16px;
+    height: 4.4px;
+    background: #211f1e;
+    top: 79px;
+    left: 3px;
+    position: absolute;
+}
+
+#A6 {
+    width: 16px;
+    height: 4.4px;
+    background: #211f1e;
+    top: 79px;
+    left: 35px;
+    position: absolute;
+}
+
+#A7 {
+    width: 16px;
+    height: 4.4px;
+    background: #211f1e;
+    top: 79px;
+    left: 50px;
+    position: absolute;
+}
+
+#A8 {
+    width: 16px;
+    height: 4.4px;
+    background: #211f1e;
+    top: 79px;
+    left: 64px;
+    position: absolute;
+}
+
+#A9 {
+    width: 16px;
+    height: 4.4px;
+    background: #211f1e;
+    top: 79px;
+    left: 97px;
+    position: absolute;
+}
+
+
+
+
+#A11 {
+    width: 16px;
+    height: 4.4px;
+    background: #211f1e;
+    top: 94px;
+    left: 3px;
+    position: absolute;
+}
+
+#Ab11 {
+    width: 11px;
+    height: 11px;
+    background: none;
+    border-style: solid;
+    border-color: #211f1e;
+    border-width: 4.4px;
+    top: 109px;
+    left: 1px;
+    position: absolute;
+}
+
+#A12 {
+    width: 16px;
+    height: 4.4px;
+    background: #211f1e;
+    top: 94px;
+    left: 96px;
+    position: absolute;
+}
+
+#Ab12 {
+    width: 11px;
+    height: 11px;
+    background: none;
+    border-style: solid;
+    border-color: #211f1e;
+    border-width: 4.4px;
+    top: 109px;
+    left: 95px;
+    position: absolute;
+}
+
+
+
+
+
+
+#grid {
+    width: 130px;
+    height: 130px;
+    top: 15px;
+    left: 15px;
+    position: absolute;
+   /* background-image: url("https://imgur.com/bUKTTSv.jpg"); 
+    background-size: 100%;
+}
