@@ -1,0 +1,185 @@
+body {
+	background: #cccccc;
+}
+
+.canvas {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	background: white;
+	position: relative;
+}
+
+
+#yellow {
+	width: 450px;
+    height: 450px;
+    background: #fce21b;
+    top: 191px;
+    left: 298px;
+    border-radius: 20px;
+    position: absolute;
+    -webkit-clip-path: polygon(16% 7%, 45% 5%, 69% 13%, 36% 17%);
+    clip-path: polygon(11% 9%, 41% 5%, 71% 13%, 36% 17%);
+}
+
+
+#table {
+	width: 450px;
+	height: 450px;
+	background: #f4a142;
+	top: 203px;
+	left: 270px;
+	border-radius: 20px;
+	position: absolute;
+	-webkit-clip-path: polygon(0 4%, 44% 0, 100% 14%, 52% 20%);
+clip-path: polygon(0 4%, 44% 0, 100% 14%, 52% 20%);
+}
+
+#leg {
+	width: 27px;
+    height: 194px;
+    background: #211f1e;
+    top: 221px;
+    left: 288px;
+    position: absolute;
+}
+
+#leg2 {
+	width: 27px;
+    height: 188px;
+    background: #211f1e;
+    top: 211px;
+    left: 434px;
+    position: absolute;
+}
+
+#leg3 {
+	width: 27px;
+    height: 204px;
+    background: #211f1e;
+    top: 288px;
+    left: 510px;
+    position: absolute;
+}
+
+#leg4 {
+	width: 27px;
+    height: 177px;
+    background: #211f1e;
+    top: 265px;
+    left: 675px;
+    position: absolute;
+}
+
+#stem {
+	width: 60px;
+    height: 54px;
+    background: #7eba68;
+    top: 146px;
+    left: 467px;
+    position: absolute;
+    -webkit-clip-path: polygon(43% 73%, 45% 69%, 45% 47%, 43% 36%, 41% 34%, 34% 34%, 33% 28%, 41% 27%, 47% 30%, 50% 34%, 49% 43%, 49% 57%, 50% 68%, 50% 74%);
+clip-path: polygon(43% 73%, 45% 69%, 45% 47%, 43% 36%, 41% 34%, 34% 34%, 33% 28%, 41% 27%, 47% 30%, 50% 34%, 49% 43%, 49% 57%, 50% 68%, 50% 74%)
+}
+
+#vase {
+	width: 60px;
+    height: 54px;
+    background: #f7c327;
+    top: 183px;
+    left: 466px;
+    position: absolute;
+    -webkit-clip-path: polygon(45% 0, 59% 0, 80% 100%, 21% 100%);
+clip-path: polygon(45% 0, 59% 0, 80% 100%, 21% 100%);
+}
+
+#pom{
+	width: 32px;
+    height: 32px;
+    background-color: red;
+    background-image: url("https://www.myjewishlearning.com/wp-content/uploads/2017/08/pomegranate-porn-1598x900.jpg");
+    top: 201px;
+    left: 437px;
+    position: absolute;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+
+#pom2{
+	width: 12px;
+    height: 7px;
+    background-color: red;
+    background-image: url(https://www.myjewishlearning.com/wp-content/uploads/2017/08/pomegranate-porn-1598x900.jpg);
+    top: 198px;
+    left: 444px;
+    position: absolute;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+#oval{
+	width: 12px;
+    height: 7px;
+    background-color: orange;
+    top: 231px;
+    left: 415px;
+    position: absolute;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+#flower1{
+	width: 12px;
+    height: 28px;
+    background-color: #5b3c21;
+    top: 148px;
+    left: 476px;
+    position: absolute;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+#flower2{
+	width: 100px;
+    height: 100px;
+    background-color: #f7d051;
+    top: 131px;
+    left: 431px;
+    position: absolute;
+    -webkit-clip-path: polygon(59% 15%, 48% 7%, 42% 6%, 44% 11%, 46% 14%, 35% 11%, 27% 8%, 25% 13%, 31% 17%, 33% 20%, 26% 18%, 19% 20%, 16% 25%, 21% 30%, 23% 31%, 28% 31%, 34% 34%, 27% 34%, 24% 42%, 20% 41%, 20% 47%, 28% 49%, 35% 49%, 35% 53%, 41% 56%, 44% 54%, 48% 51%, 51% 56%, 55% 57%, 59% 55%, 62% 51%, 58% 45%, 60% 39%, 64% 31%);
+clip-path: polygon(59% 15%, 48% 7%, 42% 6%, 44% 11%, 46% 14%, 35% 11%, 27% 8%, 25% 13%, 31% 17%, 33% 20%, 26% 18%, 19% 20%, 16% 25%, 21% 30%, 23% 31%, 28% 31%, 34% 34%, 27% 34%, 24% 42%, 20% 41%, 20% 47%, 28% 49%, 35% 49%, 35% 53%, 41% 56%, 44% 54%, 48% 51%, 51% 56%, 55% 57%, 59% 55%, 62% 51%, 58% 45%, 60% 39%, 64% 31%);
+}
+
+#flower3{
+	width: 100px;
+    height: 100px;
+    background-color: #f7d051;
+    top: 117px;
+    left: 431px;
+    position: absolute;
+    -webkit-clip-path: polygon(59% 32%, 48% 29%, 39% 38%, 42% 41%, 49% 39%, 52% 44%, 50% 46%, 53% 50%, 46% 51%, 45% 55%, 49% 60%, 56% 56%, 57% 62%, 62% 62%, 63% 56%, 66% 37%);
+clip-path: polygon(59% 32%, 48% 29%, 39% 38%, 42% 41%, 49% 39%, 52% 44%, 50% 46%, 53% 50%, 46% 51%, 45% 55%, 49% 60%, 56% 56%, 57% 62%, 62% 62%, 63% 56%, 66% 37%);
+}
+
+
+#banana{
+	width: 100px;
+    height: 100px;
+    background-color: yellow;
+    background-image: url("http://www.psd-dude.com/tutorials/resources-images/food-textures-and-patterns-for-photoshop-part-2/banana-skin-texture-1.jpg");
+    top: 169px;
+    left: 409px;
+    position: absolute;
+   -webkit-clip-path: polygon(21% 60%, 21% 64%, 42% 73%, 52% 73%, 68% 53%, 64% 42%, 59% 40%, 59% 27%, 55% 27%, 55% 38%, 51% 44%, 50% 51%, 42% 58%, 28% 58%);
+clip-path: polygon(21% 60%, 21% 64%, 42% 73%, 52% 73%, 68% 53%, 64% 42%, 59% 40%, 59% 27%, 55% 27%, 55% 38%, 51% 44%, 50% 51%, 42% 58%, 28% 58%);
+}
