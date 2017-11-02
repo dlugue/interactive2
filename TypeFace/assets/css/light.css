@@ -54,6 +54,111 @@ body {
     opacity: .3;
 }
 
+.buttonA{
+    background: none;
+    border-style: solid;
+    border-color: #211f1e;
+    border-width: 4.4px;
+    padding: 15px 18px;
+    margin-top: 190vh;
+    margin-bottom: none;
+    text-align: center;
+    position: relative;
+    left: 41px;
+}
+
+.buttonA:focus {
+    opacity: .3;
+}
+
+.buttonA:hover {
+    opacity: .3;
+}
+
+.buttonB{
+    background: none;
+    border-style: solid;
+    border-color: #211f1e;
+    border-width: 4.4px;
+    padding: 15px 18px;
+    margin-top: 190vh;
+    margin-bottom: none;
+    text-align: center;
+    position: relative;
+    left: 61px;
+}
+
+.buttonB:focus {
+    opacity: .3;
+}
+
+.buttonB:hover {
+    opacity: .3;
+}
+
+.buttonC{
+    background: none;
+    border-style: solid;
+    border-color: #211f1e;
+    border-width: 4.4px;
+    padding: 15px 18px;
+    margin-top: 190vh;
+    margin-bottom: none;
+    text-align: center;
+    position: relative;
+    left: 81px;
+}
+
+.buttonC:focus {
+    opacity: .3;
+}
+
+.buttonC:hover {
+    opacity: .3;
+}
+
+.buttonD{
+    background: none;
+    border-style: solid;
+    border-color: #211f1e;
+    border-width: 4.4px;
+    padding: 15px 18px;
+    margin-top: 190vh;
+    margin-bottom: none;
+    text-align: center;
+    position: relative;
+    left: 101px;
+}
+
+.buttonD:focus {
+    opacity: .3;
+}
+
+.buttonD:hover {
+    opacity: .3;
+}
+
+.buttonE{
+    background: none;
+    border-style: solid;
+    border-color: #211f1e;
+    border-width: 4.4px;
+    padding: 15px 18px;
+    margin-top: 190vh;
+    margin-bottom: none;
+    text-align: center;
+    position: relative;
+    left: 121px;
+}
+
+.buttonE:focus {
+    opacity: .3;
+}
+
+.buttonE:hover {
+    opacity: .3;
+}
+
 /*#grid {
     transform: scale(3);
     transform-origin: top left;
@@ -96,6 +201,16 @@ body {
     transform: scale(3);
     mix-blend-mode: multiply;   
 }
+#grid55 {
+    transform: scale(3);
+    mix-blend-mode: multiply;  
+}
+#grid56 {
+    transform: scale(3);
+    mix-blend-mode: multiply;  
+}
+
+
 
 
 
@@ -3080,7 +3195,7 @@ body {
 #grid32 {
     width: 130px;
     height: 130px;
-    top: 1840px;
+    top: 1740px;
     left: 540px;
     background-color: none;
     position: absolute;
@@ -3088,7 +3203,7 @@ body {
 #grid33 {
     width: 130px;
     height: 130px;
-    top: 1850px;
+    top: 1750px;
     left: 550px;
     background-color: none;
     position: absolute;
@@ -3096,12 +3211,28 @@ body {
 #grid34 {
     width: 130px;
     height: 130px;
-    top: 1840px;
+    top: 1740px;
     left: 550px;
     background-color: none;
     position: absolute;
    }   
 
+#grid55 {
+    width: 130px;
+    height: 130px;
+    top: 1750px;
+    left: 550px;
+    background-color: none;
+    position: absolute;
+   }
+#grid56 {
+    width: 130px;
+    height: 130px;
+    top: 1740px;
+    left: 550px;
+    background-color: none;
+    position: absolute;
+   }
 
 
 #grid35 {

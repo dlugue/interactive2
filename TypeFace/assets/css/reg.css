@@ -54,6 +54,111 @@ body {
     opacity: .3;
 }
 
+.buttonA{
+    background: none;
+    border-style: solid;
+    border-color: #211f1e;
+    border-width: 4.4px;
+    padding: 15px 18px;
+    margin-top: 190vh;
+    margin-bottom: none;
+    text-align: center;
+    position: relative;
+    left: 41px;
+}
+
+.buttonA:focus {
+    opacity: .3;
+}
+
+.buttonA:hover {
+    opacity: .3;
+}
+
+.buttonB{
+    background: none;
+    border-style: solid;
+    border-color: #211f1e;
+    border-width: 4.4px;
+    padding: 15px 18px;
+    margin-top: 190vh;
+    margin-bottom: none;
+    text-align: center;
+    position: relative;
+    left: 61px;
+}
+
+.buttonB:focus {
+    opacity: .3;
+}
+
+.buttonB:hover {
+    opacity: .3;
+}
+
+.buttonC{
+    background: none;
+    border-style: solid;
+    border-color: #211f1e;
+    border-width: 4.4px;
+    padding: 15px 18px;
+    margin-top: 190vh;
+    margin-bottom: none;
+    text-align: center;
+    position: relative;
+    left: 81px;
+}
+
+.buttonC:focus {
+    opacity: .3;
+}
+
+.buttonC:hover {
+    opacity: .3;
+}
+
+.buttonD{
+    background: none;
+    border-style: solid;
+    border-color: #211f1e;
+    border-width: 4.4px;
+    padding: 15px 18px;
+    margin-top: 190vh;
+    margin-bottom: none;
+    text-align: center;
+    position: relative;
+    left: 101px;
+}
+
+.buttonD:focus {
+    opacity: .3;
+}
+
+.buttonD:hover {
+    opacity: .3;
+}
+
+.buttonE{
+    background: none;
+    border-style: solid;
+    border-color: #211f1e;
+    border-width: 4.4px;
+    padding: 15px 18px;
+    margin-top: 190vh;
+    margin-bottom: none;
+    text-align: center;
+    position: relative;
+    left: 121px;
+}
+
+.buttonE:focus {
+    opacity: .3;
+}
+
+.buttonE:hover {
+    opacity: .3;
+}
+
 /*#grid {
     transform: scale(3);
     transform-origin: top left;
@@ -95,6 +200,14 @@ body {
 #grid34 {
     transform: scale(3);
     mix-blend-mode: multiply;   
+}
+#grid55 {
+    transform: scale(3);
+    mix-blend-mode: multiply;  
+}
+#grid56 {
+    transform: scale(3);
+    mix-blend-mode: multiply;  
 }
 
 
@@ -209,58 +322,37 @@ body {
     position: absolute;
 }
 
-.square {
-     width: 11px;
-    height: 11px;
-    background: none;
-    border-style: solid;
-    border-color: #211f1e;
-    border-width: 4.4px;
-    position: absolute;
-}
 
-.square2 {
-     width: 20px;
+.square {
+    width: 20px;
     height: 20px;
     background: #211f1e;
     position: absolute;
 }
 
 .squareE {
-     width: 11px;
-    height: 11px;
-    background: none;
-    border-style: solid;
-    border-color: #00ffff;
-    border-width: 1.4px;
+    width: 20px;
+    height: 20px;
+    background: #00ffff;
     position: absolute;
 }
 .squareF {
-     width: 11px;
-    height: 11px;
-    background: none;
-    border-style: solid;
-    border-color: #ff00ff;
-    border-width: 4.4px;
+    width: 20px;
+    height: 20px;
+    background: #ff00ff;
     position: absolute;
 }
 .squareL {
-     width: 11px;
-    height: 11px;
-    background: none;
-    border-style: solid;
-    border-color: #ffff00;
-    border-width: 4.4px;
+    width: 20px;
+    height: 20px;
+    background: #ffff00;
     position: absolute;
 }
 
 .squareS {
-     width: 11px;
-    height: 11px;
-    background: none;
-    border-style: solid;
-    border-color: #ff00ff;
-    border-width: 4.4px;
+    width: 20px;
+    height: 20px;
+    background: #ff00ff;
     position: absolute;
 }
 .lineS {
@@ -270,12 +362,9 @@ body {
     position: absolute;
 }
 .squareC {
-     width: 11px;
-    height: 11px;
-    background: none;
-    border-style: solid;
-    border-color: #00ffff;
-    border-width: 4.4px;
+    width: 20px;
+    height: 20px;
+    background: #00ffff;
     position: absolute;
 }
 .lineC {
@@ -290,8 +379,8 @@ body {
 
 
 @keyframes sizeLS {
-  from {border-width: 1.4px;}
-    to {border-width: 4.4px;}
+  from {height: 5px; width: 5px;}
+    to {height: 20px; width: 20px;}
 }
 
 .test {
@@ -316,8 +405,8 @@ body {
 }
 
 @keyframes sizeFS {
-  from {border-width: 8.4px;}
-    to {border-width: 1.4px;}
+  from {height: 20px; width: 20px;}
+    to {height: 5px; width: 5px;}
 }
 
 .test3 {
@@ -342,8 +431,8 @@ body {
 }
 
 @keyframes sizeES {
-  from {border-width: 1.4px;}
-    to {border-width: 8.4px;}
+  from {height: 5px; width: 5px;}
+    to {height: 20px; width: 20px;}
 }
 
 .test5 {
@@ -3080,7 +3169,7 @@ body {
 #grid32 {
     width: 130px;
     height: 130px;
-    top: 1840px;
+    top: 1740px;
     left: 540px;
     background-color: none;
     position: absolute;
@@ -3088,7 +3177,7 @@ body {
 #grid33 {
     width: 130px;
     height: 130px;
-    top: 1850px;
+    top: 1750px;
     left: 550px;
     background-color: none;
     position: absolute;
@@ -3096,11 +3185,28 @@ body {
 #grid34 {
     width: 130px;
     height: 130px;
-    top: 1840px;
+    top: 1740px;
     left: 550px;
     background-color: none;
     position: absolute;
    }   
+
+#grid55 {
+    width: 130px;
+    height: 130px;
+    top: 1750px;
+    left: 550px;
+    background-color: none;
+    position: absolute;
+   }
+#grid56 {
+    width: 130px;
+    height: 130px;
+    top: 1740px;
+    left: 550px;
+    background-color: none;
+    position: absolute;
+   }
 
 
 
