@@ -1,0 +1,249 @@
+<html>
+<head >
+  <title>What You See...</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet">
+
+  <!--<link rel="stylesheet" href="style.css"/>-->
+  <style>
+
+  body {
+
+  }
+
+* {
+  box-sizing: border-box;
+}
+
+audio {
+  width: 80px;
+}
+
+.main {
+  position: absolute;
+  color: #000;
+  width: 900px;
+  height: 300px;
+  padding: 10px;
+  top: 50%;
+  left: 50%;
+  margin-top: -130px;
+  margin-left: -440px;
+}
+
+blockquote {
+  font-size: 3rem;
+}
+cite {
+  display: block;
+  text-align: right;
+  font-family: Verdana, Arial, sans-serif;
+  margin-top: 1rem;
+  font-size: .9rem;
+  color: #aaa;
+  font-style: normal;
+}
+blockquote q {
+  font-family: 'Prata', serif;
+  font-style: italic;
+  letter-spacing: .1rem;
+}
+blockquote q span { 
+  will-change: opacity, filter;
+  opacity: 0;
+  filter: blur(0px);
+}
+q {
+  quotes: "“" "”" "‘" "’";
+}
+q:before {
+    content: open-quote;
+    margin-right: .8rem;
+}
+q:after {
+  content: close-quote;
+}
+q:before, q:after {
+  color: #ccc;
+  font-size: 4rem;
+}
+
+.this {
+  float: left;
+    opacity: .3;
+    z-index: 9;
+}
+
+.this:hover {
+  opacity: 1.0;
+}
+
+.p1 {
+  position: absolute;
+  transform: scale(.15);
+  filter: blur(20px);
+  opacity: .6;
+  margin-top: -30vh;
+  margin-left: -20vw;
+
+  transition: filter .8s ease;
+}
+.p1:hover {
+  transform: scale(.15);
+  filter: blur(0px);
+  opacity: 1;
+}
+
+.p2 {
+  position: absolute;
+  transform: scale(.15);
+  filter: blur(20px);
+  opacity: .6;
+  margin-left: -20vw;
+
+  transition: filter .8s ease;
+}
+
+.p2:hover {
+  transform: scale(.15);
+  filter: blur(0px);
+  opacity: 1;
+}
+
+.p3 {
+  position: absolute;
+  transform: scale(.15);
+  filter: blur(20px);
+  opacity: .6;
+  margin-top: -55vh;
+
+    transition: filter .8s ease;
+}
+.p3:hover {
+  transform: scale(.15);
+  filter: blur(0px);
+  opacity: 1;
+}
+
+.p4 {
+  position: absolute;
+  transform: scale(.15);
+  filter: blur(20px);
+  opacity: .6;
+
+
+    transition: filter .8s ease;
+}
+.p4:hover {
+  transform: scale(.15);
+  filter: blur(0px);
+  opacity: 1;
+}
+
+.p5 {
+  position: absolute;
+  transform: scale(.15);
+  filter: blur(20px);
+  opacity: .6;
+  margin-left: 5vw;
+
+    transition: filter .8s ease;
+}
+.p5:hover {
+  transform: scale(.15);
+  filter: blur(0px);
+  opacity: 1;
+}
+
+  </style>
+</head>
+
+<body>
+
+<div class="p1"><img src="MarriageReasonSqualor.jpg"></div>
+<div class="p2"><img src="Jill Black Series.jpg"></div>
+<div class="p3"><img src="Agadir 2.jpg"></div>
+<div class="p4"><img src="Hampton Roads.jpg"></div>
+<div class="p5"><img src="Fez_2.jpg"></div>
+
+<div class="this"><audio controls autoplay>
+  <source src="Stella.mp3" type="audio/mpeg">
+</audio></div>
+
+
+  <div class="main"><blockquote contenteditable="true"><q>What you see, is what you see.</q>
+  <cite>&mdash;Frank Stella</cite>
+</blockquote>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+function splitWords() {
+  let quote = document.querySelector("blockquote q");
+  quote.innerText.replace(/(<([^>]+)>)/ig,"");
+  quotewords = quote.innerText.split(" "),
+  wordCount = quotewords.length;
+  quote.innerHTML = "";
+  for (let i=0; i < wordCount; i++) {
+    quote.innerHTML += "<span>"+quotewords[i]+"</span>";
+    if (i < quotewords.length - 1) {
+      quote.innerHTML += " ";
+    }
+  }
+  quotewords = document.querySelectorAll("blockquote q span");
+  fadeWords(quotewords);
+}
+
+function getRandom(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+function fadeWords(quotewords) {
+  Array.prototype.forEach.call(quotewords, function(word) {
+    let animate = word.animate([{
+      opacity: 0,
+      filter: "blur("+getRandom(2,5)+"px)"
+    }, {
+      opacity: 1,
+      filter: "blur(0px)"
+    }], 
+    { 
+      duration: 1000,
+      delay: getRandom(500,3300),
+      fill: 'forwards'
+    } 
+   )
+  })
+}
+
+
+splitWords();
+
+</script>
+
+
+</body>
+</html>

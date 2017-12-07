@@ -1,0 +1,378 @@
+<html>
+<head >
+  <title>Is What You See.</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Geo" rel="stylesheet">
+
+  <!--<link rel="stylesheet" href="style.css"/>-->
+  <style>
+
+body{
+  height: 300%
+}
+
+.first {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+}
+.second {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+
+  display: none;
+}
+
+.third {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 3;
+
+  display: none;
+}
+
+.four {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 4;
+
+  display: none;
+}
+.five {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 5;
+
+  display: none;
+}
+.six {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 6;
+
+  display: none;
+}
+.seven {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 7;
+
+  display: none;
+}
+.eight {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 8;
+
+  display: none;
+}
+.nine {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 9;
+
+  display: none;
+}
+.ten {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 10;
+
+  display: none;
+}
+.eleven {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 11;
+
+  display: none;
+}
+.twelve {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 12;
+
+  display: none;
+}
+.thirteen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 13;
+
+  display: none;
+}
+.fourteen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 14;
+
+  display: none;
+}
+.fifteen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 15;
+
+  display: none;
+}
+.sixteen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 16;
+
+  display: none;
+}
+.seventeen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 17;
+
+  display: none;
+}
+.eighteen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 18;
+
+  display: none;
+}
+
+
+#test{
+  display: none;
+}
+
+.showme{
+  cursor: pointer;
+}
+
+.intro{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  margin: 0 auto;
+
+  font-family: 'Geo', sans-serif;
+  letter-spacing: .1rem;
+  max-width: 50%;
+}
+
+.fade{
+  -webkit-animation: fadeinout 8s ease-in-out 0s 1;
+    animation: fadeinout 8s ease-in-out 0s 1;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeinout {
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  50% { opacity: 1; }
+}
+
+/* Keyframes for the fade-in */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;
+  opacity: 1 \9; /*just in case ie*/
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1.5s;
+  -moz-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+.fade-in.one{
+  -webkit-animation-delay: 8s;
+  -moz-animation-delay: 8s;
+  animation-delay: 8s;
+}
+.logo{
+  position: fixed;
+  width: 185px;
+  height: 92.5px;
+}
+
+
+.desc{
+  color: #D15127;
+  font-size: 12px;
+  position: fixed;
+  padding-top: 50px;
+
+  max-width: 200px;
+
+  font-family: "roboto",sans-serif;
+  font-weight: bold;
+  letter-spacing: .020em;
+
+}
+  </style>
+</head>
+
+<body>
+
+  <a href="MicroSite_v2.html"><img class="logo" src="logo.png"></a>
+  <div><p class="desc"><span style="font-style: italic;">Six Mile Bottom,</span> 1960, <br>aluminum oil paint on canvas, <br>300 x 182.2 x 7.5cm</p></div>
+
+
+
+<div class="intro fade">Any painting is an object...</div>
+
+<span class="showme fade-in one"><img class="first blur" src="fstella_3.jpg" style="width: auto; height: 8rem;"></span>
+<img id="test" class="first" src="fstella_3_1.png" style="width: auto; height: 100vh;">
+<img class="second" src="fstella_3_2.png" style="width: auto; height: 100vh;">
+<img class="third" src="fstella_3_3.png" style="width: auto; height: 100vh;">
+<img class="four" src="fstella_3_4.png" style="width: auto; height: 100vh;">
+<img class="five" src="fstella_3_5.png" style="width: auto; height: 100vh;">
+<img class="six" src="fstella_3_6.png" style="width: auto; height: 100vh;">
+<img class="seven" src="fstella_3_7.png" style="width: auto; height: 100vh;">
+<img class="eight" src="fstella_3_8.png" style="width: auto; height: 100vh;">
+<img class="nine" src="fstella_3_9.png" style="width: auto; height: 100vh;">
+<img class="ten" src="fstella_3_10.png" style="width: auto; height: 100vh;">
+<img class="eleven" src="fstella_3_11.png" style="width: auto; height: 100vh;">
+<img class="twelve" src="fstella_3.jpg" style="width: auto; height: 100vh;">
+
+
+
+
+
+<script>
+
+$(document).on('mouseover', '.showme', function(){
+  $('#test').show();
+  $('.showme').hide();
+});
+
+$(window).scroll(function(){ 
+    
+        scrollPos = $('body').scrollTop();
+    
+        if(scrollPos > 100){
+            $('.second').show();
+        } else if (scrollPos < 100){
+            $('.second').hide();
+        }
+    
+        if(scrollPos > 200){
+            $('.third').show();
+        } else if (scrollPos < 200){
+            $('.third').hide();
+        }
+
+        if(scrollPos > 300){
+            $('.three').show();
+        } else if (scrollPos < 300){
+            $('.three').hide();
+        }
+    
+        if(scrollPos > 400){
+            $('.four').show();
+        } else if (scrollPos < 400){
+            $('.four').hide();
+        }
+
+        if(scrollPos > 500){
+            $('.five').show();
+        } else if (scrollPos < 500){
+            $('.five').hide();
+        }
+    
+        if(scrollPos > 600){
+            $('.six').show();
+        } else if (scrollPos < 600){
+            $('.six').hide();
+        }
+
+        if(scrollPos > 700){
+            $('.seven').show();
+        } else if (scrollPos < 700){
+            $('.seven').hide();
+        }
+    
+        if(scrollPos > 800){
+            $('.eight').show();
+        } else if (scrollPos < 800){
+            $('.eight').hide();
+        }
+
+        if(scrollPos > 900){
+            $('.nine').show();
+        } else if (scrollPos < 900){
+            $('.nine').hide();
+        }
+    
+        if(scrollPos > 1000){
+            $('.ten').show();
+        } else if (scrollPos < 1000){
+            $('.ten').hide();
+        }
+
+        if(scrollPos > 1100){
+            $('.eleven').show();
+        } else if (scrollPos < 1100){
+            $('.eleven').hide();
+        }
+    
+        if(scrollPos > 1200){
+            $('.twelve').show();
+        } else if (scrollPos < 1200){
+            $('.twelve').hide();
+        }
+
+            });
+
+</script>
+
+
+</body>
+</html>

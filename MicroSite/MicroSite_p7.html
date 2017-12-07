@@ -1,0 +1,192 @@
+<html>
+<head >
+  <title>Is What You See.</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Geo" rel="stylesheet">
+
+  <!--<link rel="stylesheet" href="style.css"/>-->
+  <style>
+
+body{
+  height: 180%
+}
+
+.first {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+}
+.second {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+
+  display: none;
+}
+
+.third {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 3;
+
+  display: none;
+}
+
+.four {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 4;
+
+  display: none;
+}
+
+#test{
+  display: none;
+}
+
+.showme{
+  cursor: pointer;
+}
+
+.intro{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  margin: 0 auto;
+
+  font-family: 'Geo', sans-serif;
+  letter-spacing: .1rem;
+  max-width: 50%;
+}
+
+.fade{
+  -webkit-animation: fadeinout 8s ease-in-out 0s 1;
+    animation: fadeinout 8s ease-in-out 0s 1;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeinout {
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  50% { opacity: 1; }
+}
+
+/* Keyframes for the fade-in */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;
+  opacity: 1 \9; /*just in case ie*/
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1.5s;
+  -moz-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+.fade-in.one{
+  -webkit-animation-delay: 8s;
+  -moz-animation-delay: 8s;
+  animation-delay: 8s;
+}
+.logo{
+  position: fixed;
+  width: 185px;
+  height: 92.5px;
+}
+
+.desc{
+  color: #D15127;
+  font-size: 12px;
+  position: fixed;
+  padding-top: 50px;
+
+  max-width: 200px;
+
+  font-family: "roboto",sans-serif;
+  font-weight: bold;
+  letter-spacing: .020em;
+
+}
+
+  </style>
+</head>
+
+<body>
+
+  <a href="MicroSite_v2.html"><img class="logo" src="logo.png"></a>
+
+  <div><p class="desc"><span style="font-style: italic;">Tuftonboro l,</span> 1966, <br>synthetic polymer paint and graphite on canvas, <br>255.3 x 276.9 x 10cm</p></div>
+
+
+<div class="intro fade">All I want anyone to get out of my paintings...</div>
+
+<span class="showme fade-in one"><img class="first blur"  src="fstella_7.jpg" style="width: 8rem; height: auto;"></span>
+
+<img id="test" class="first" src="fstella_7_1.png" style="width: auto; height: 100vh;">
+<img class="second" src="fstella_7_2.png" style="width: auto; height: 100vh;">
+<img class="third" src="fstella_7_3.png" style="width: auto; height: 100vh;">
+<img class="four" src="fstella_7.jpg" style="width: auto; height: 100vh;">
+
+
+<script>
+
+$(document).on('mouseover', '.showme', function(){
+  $('#test').show();
+  $('.showme').hide();
+});
+
+$(window).scroll(function(){ 
+    
+        scrollPos = $('body').scrollTop();
+    
+        if(scrollPos > 100){
+            $('.second').show();
+        } else if (scrollPos < 100){
+            $('.second').hide();
+        }
+    
+        if(scrollPos > 200){
+            $('.third').show();
+        } else if (scrollPos < 200){
+            $('.third').hide();
+        }
+
+        if(scrollPos > 300){
+            $('.three').show();
+        } else if (scrollPos < 300){
+            $('.three').hide();
+        }
+    
+        if(scrollPos > 400){
+            $('.four').show();
+        } else if (scrollPos < 400){
+            $('.four').hide();
+        }
+            });
+
+</script>
+
+
+</body>
+</html>

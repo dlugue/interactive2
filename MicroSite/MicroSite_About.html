@@ -1,0 +1,262 @@
+<html>
+<head >
+  <title>About What You See.</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Geo" rel="stylesheet">
+
+  <!--<link rel="stylesheet" href="style.css"/>-->
+  <style>
+
+
+.main{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9rem;
+  margin: 0 auto;
+
+  font-family: 'Geo', sans-serif;
+  letter-spacing: .1rem;
+
+  cursor: pointer;
+}
+
+.noselect{
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+
+.logo{
+  position: fixed;
+  width: 185px;
+  height: 92.5px;
+
+  z-index: 2;
+}
+
+.fade{
+  -webkit-animation: fadeinout 8s ease-in-out 0s 1;
+    animation: fadeinout 8s ease-in-out 0s 1;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeinout {
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  50% { opacity: 1; }
+}
+
+/* Keyframes for the fade-in */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;
+  opacity: 1 \9; /*just in case ie*/
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1.5s;
+  -moz-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+.fade-in.one{
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.fade-in.two{
+  -webkit-animation-delay: 2.5s;
+  -moz-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+.sub{
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  color: #D15127;
+  font-size: 24px;
+  padding-top: 120px;
+
+
+  font-family: "roboto",sans-serif;
+  font-weight: bold;
+  letter-spacing: .2em;
+
+  width: fit-content;
+
+}
+
+.sub2{
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  color: #D15127;
+  font-size: 24px;
+  padding-top: 120px;
+
+
+  font-family: "roboto",sans-serif;
+  font-weight: bold;
+  letter-spacing: .1em;
+
+  width: fit-content;
+
+}
+
+.text{
+
+padding-top:  2050px;
+
+
+font-size: 16px;
+    line-height: 24px;
+    font-family: "roboto",sans-serif;
+    font-weight: 300;
+    color: #3E3E3E;
+
+    max-width: 48vw;
+
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.portrait{
+  
+  display: block;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  padding-top: 1400px;
+}
+
+.p{
+    margin: 18 6 0 6;
+}
+
+.center{
+  position: absolute;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  margin-top: 1500px; 
+  margin-bottom: 100px;
+}
+
+  </style>
+</head>
+
+
+
+<body>
+
+<a href="MicroSite_v2.html"><img class="logo" src="logo.png"></a>
+
+
+<p class="main noselect fade-in one">F r a n k &nbsp; S t e l l a</p>
+
+<p class="sub fade-in two">A Retrospective &nbsp;&#124;&nbsp; November 5, 2016 – February 26, 2017</p>
+
+<img class="portrait" src="Stella.jpg" style="height: 50vh; width: auto;">
+
+<p class="text">For almost six decades Frank Stella has been one of the most important and influential figures in the evolution of modern art, expanding the definitions of art and challenging its conventions. Exploring pictorial space—how paintings can seem to expand or contract, lie completely flat or envelop the viewer, suggest movement or foster stillness—has led to some of Stella’s most significant innovations. In its examination of his work, this exhibition considers Stella’s long-standing interest in the picture plane, presenting early paintings that reference the spaces where he lived and worked; his groundbreaking use of color, shape, and volume to map new possibilities for abstraction; and finally his use of advanced technology to evoke new conceptions of space.</p>
+
+<div class="center">
+<div style="display: flex; flex-direction: row; position: relative;">
+  
+  <div style="display: flex; flex-direction: column;">
+  <a href="MicroSite_p1.html" target="_blank"><div class="p"><img id="test"  src="fstella_1.jpg" style="width: 8rem; height: auto;"></div></a>
+
+  <a href="MicroSite_p2.html" target="_blank"><div class="p"><img id="test2" src="fstella_2.jpg" style="width: auto; height: 8rem;"></div></a>
+
+  <a href="MicroSite_p3.html" target="_blank"><div class="p"><img id="test3" src="fstella_3.jpg" style="width: auto; height: 8rem;"></div></a>
+  </div>
+  <div style="display: flex; flex-direction: column;">
+  <a href="MicroSite_p4.html" target="_blank"><div class="p"><img id="test4" src="fstella_4.jpg" style="width: auto; height: 8rem;"></div></a>
+
+  <a href="MicroSite_p5.html" target="_blank"><div class="p"><img id="test5" src="fstella_5.jpg" style="width: 8rem; height: auto;"></div></a>
+
+  <a href="MicroSite_p6.html" target="_blank"><div class="p"><img id="test6" src="fstella_6.jpg" style="width: auto; height: 8rem;"></div></a>
+</div>
+
+  <div style="display: flex; flex-direction: column;">
+  <a href="MicroSite_p7.html" target="_blank"><div class="p"><img id="test7" src="fstella_7.jpg" style="width: 8rem; height: auto;"></div></a>
+
+  <a href="MicroSite_p8.html" target="_blank"><div class="p"><img id="test8" src="fstella_8.jpg" style="width: auto; height: 8rem;"></div></a>
+
+  <a href="MicroSite_p9.html" target="_blank"><div class="p"><img id="test9" src="fstella_9.jpg" style="width: 8rem; height: auto;"></div></a>
+</div>
+
+<div style="display: flex; flex-direction: column;">
+  <a href="MicroSite_p10.html" target="_blank"><div class="p"><img id="test10" src="fstella_10.jpg" style="width: auto; height: 8rem;"></div></a>
+
+  <a href="MicroSite_p11.html" target="_blank"><div class="p"><img id="test11" src="fstella_11.jpg" style="width: 8rem; height: auto;"></div></a>
+</div></div>
+
+
+<p class="sub2" style="padding-top: 1000px; margin-bottom: 200px;">
+  <span style="margin-left: -10px;">"</span>My painting is based on the fact that only what can be seen there is there. It really is an object. Any painting is an object and anyone who gets involved enough in this finally has to face up to the objectness of whatever it is that he's doing. He is making a thing. All I want anyone to get out of my paintings, and all I ever get out of them, is the fact that you can see the whole idea without any confusion. What you see is what you see."
+</p>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+
+</script>
+
+
+</body>
+</html>
