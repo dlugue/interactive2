@@ -2,14 +2,32 @@ body {
 	overflow-x: hidden;
 }
 
-.canvas {
-	width: 100vw;
-	height: 350vh;
-	background: white;
+.divider1{
+    background: #bdbdbd;
+    height: 2px;
+    width: 15%;
+    margin: 150px auto;
+    margin-top: 800px;
+    margin-bottom: 75px;
+}
+
+.divider2{
+    background: #bdbdbd;
+    height: 2px;
+    width: 15%;
+    margin: 150px auto;
+    margin-top: 800px;
+    margin-bottom: 50px;
+}
+
+.typeface {
 	position: relative;
-    margin-left: 4vw;
-    margin-right: -4vw;
-    margin-top: 5vh;
+    margin-top: 100px;
+}
+
+.movedown {
+    margin-top: 250px;
+    position: relative;
 }
 
 .button2{
@@ -18,11 +36,9 @@ body {
     border-color: #211f1e;
     border-width: 4.4px;
     padding: 15px 32px;
-    margin-top: 100vh;
-    margin-bottom: none;
     text-align: center;
     position: relative;
-    left: 42%;
+    left: 41%;
 }
 
 .button2:focus {
@@ -39,11 +55,9 @@ body {
     border-color: #211f1e;
     border-width: 4.4px;
     padding: 15px 32px;
-    margin-top: 100vh;
-    margin-bottom: none;
     text-align: center;
     position: relative;
-    left: 41%;
+    left: 40%;
 }
 
 .button1:focus {
@@ -60,11 +74,10 @@ body {
     border-color: #211f1e;
     border-width: 4.4px;
     padding: 15px 18px;
-    margin-top: 190vh;
     margin-bottom: none;
     text-align: center;
     position: relative;
-    left: 41px;
+    left: 42.5%;
 }
 
 .buttonA:focus {
@@ -81,11 +94,10 @@ body {
     border-color: #211f1e;
     border-width: 4.4px;
     padding: 15px 18px;
-    margin-top: 190vh;
     margin-bottom: none;
     text-align: center;
     position: relative;
-    left: 61px;
+    left: 43.5%;
 }
 
 .buttonB:focus {
@@ -102,11 +114,10 @@ body {
     border-color: #211f1e;
     border-width: 4.4px;
     padding: 15px 18px;
-    margin-top: 190vh;
     margin-bottom: none;
     text-align: center;
     position: relative;
-    left: 81px;
+    left: 44.5%;
 }
 
 .buttonC:focus {
@@ -117,47 +128,6 @@ body {
     opacity: .3;
 }
 
-.buttonD{
-    background: none;
-    border-style: solid;
-    border-color: #211f1e;
-    border-width: 4.4px;
-    padding: 15px 18px;
-    margin-top: 190vh;
-    margin-bottom: none;
-    text-align: center;
-    position: relative;
-    left: 101px;
-}
-
-.buttonD:focus {
-    opacity: .3;
-}
-
-.buttonD:hover {
-    opacity: .3;
-}
-
-.buttonE{
-    background: none;
-    border-style: solid;
-    border-color: #211f1e;
-    border-width: 4.4px;
-    padding: 15px 18px;
-    margin-top: 190vh;
-    margin-bottom: none;
-    text-align: center;
-    position: relative;
-    left: 121px;
-}
-
-.buttonE:focus {
-    opacity: .3;
-}
-
-.buttonE:hover {
-    opacity: .3;
-}
 
 /*#grid {
     transform: scale(3);
@@ -200,14 +170,6 @@ body {
 #grid34 {
     transform: scale(3);
     mix-blend-mode: multiply;   
-}
-#grid55 {
-    transform: scale(3);
-    mix-blend-mode: multiply;  
-}
-#grid56 {
-    transform: scale(3);
-    mix-blend-mode: multiply;  
 }
 
 
@@ -3169,44 +3131,25 @@ body {
 #grid32 {
     width: 130px;
     height: 130px;
-    top: 1740px;
-    left: 540px;
-    background-color: none;
+    left: 45.5%;
+    padding-bottom: 25px;
     position: absolute;
 }
 #grid33 {
     width: 130px;
     height: 130px;
-    top: 1750px;
-    left: 550px;
-    background-color: none;
+    left: 46.5%;
+    padding-bottom: 25px;
     position: absolute;
    }
 #grid34 {
     width: 130px;
     height: 130px;
-    top: 1740px;
-    left: 550px;
-    background-color: none;
+    left: 47.5%;
+    padding-bottom: 25px;
     position: absolute;
    }   
 
-#grid55 {
-    width: 130px;
-    height: 130px;
-    top: 1750px;
-    left: 550px;
-    background-color: none;
-    position: absolute;
-   }
-#grid56 {
-    width: 130px;
-    height: 130px;
-    top: 1740px;
-    left: 550px;
-    background-color: none;
-    position: absolute;
-   }
 
 
 

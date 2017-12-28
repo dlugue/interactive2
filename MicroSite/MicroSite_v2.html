@@ -227,10 +227,10 @@ a:hover>div { display: block; }*/
 }
 
 .desc{
-  color: #D15127;
-  font-size: 16px;
+  color: #c4c4c4;
+  font-size: 14px;
   position: fixed;
-  padding-top: 50px;
+  padding-top: 40px;
 
   max-width: 200px;
 
@@ -249,7 +249,7 @@ a:hover>div { display: block; }*/
 
   <img class="logo" src="logo.png">
 
-  <div><a href="MicroSite_About.html"><p class="desc">About</p></a></div>
+  <div><p class="desc">Hover to learn more</p></div>
 
 
   <a href="MicroSite_p1.html" target="_blank"><div class="p1"><img id="test" class="random"  src="fstella_1.jpg" style="width: 8rem; height: auto; position: absolute;"></div></a>
@@ -383,25 +383,6 @@ function fadeWords(quotewords) {
 }
 splitWords();
 
-
-//ramdom colors below
-
-
-function randomize() {
-  document.getElementById('p1').style.color = randomColors();
-}
-
-
-function randomColors() {
-  return '#' + Math.floor(Math.random() * 16777215).toString(16);
-}
-
-
-setInterval(function() {
-
-randomize()
-
-}, 2750);
 
 $(document).ready(function(){
 
